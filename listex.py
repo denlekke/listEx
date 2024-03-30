@@ -48,7 +48,7 @@ if __name__ == "__main__":
                         directory = torrent_details['torrent']['filePath']
                         filenames = parse_file_list(fileList)
                         for filename in filenames:
-                            if '.flac' in filename:
+                            if f'.{torrent_format.lower()}' in filename.lower():
                                 m3u_content += html.unescape(f"{directory}/{filename}\n")
 
         create_m3u(f"collage_{str(collage_id)}_playlist.m3u", m3u_content)
