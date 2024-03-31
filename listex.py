@@ -31,7 +31,7 @@ if __name__ == "__main__":
     collage_id = COLLAGE_ID_HERE  # Example collage ID
     torrent_media = 'Vinyl'
     torrent_format = 'FLAC'
-    torrent_encoding = 'Losless'
+    torrent_encoding = 'Lossless'
     collage_details = get_collage_details(collage_id)
     pprint(collage_details)
     time.sleep(1)
